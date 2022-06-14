@@ -27,14 +27,14 @@ export class MattermostStrategy extends OAuth2Strategy {
             }
 
             // TODO: Implement mattermost response interface
-            done(null, <MattermostProfile>{
+            done(null, {
                 // @ts-ignore
                 email: json.email,
                 // @ts-ignore
                 id: json.id,
                 // @ts-ignore
                 displayName: json.nickname,
-            });
+            } as MattermostProfile);
         });
     }
 }
