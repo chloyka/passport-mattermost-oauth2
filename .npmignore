@@ -1,7 +1,0 @@
-.prettierrc
-src
-.huskyrc
-tsconfig.json
-tslint.json
-*.ts
-!*.d.ts

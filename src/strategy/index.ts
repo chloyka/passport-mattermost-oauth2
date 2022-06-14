@@ -1,5 +1,4 @@
-import * as OAuth2Strategy from "passport-oauth2";
-import {InternalOAuthError} from "passport-oauth2";
+import OAuth2Strategy, {InternalOAuthError} from "passport-oauth2";
 import {MattermostDoneCallback, MattermostProfile, MattermostStrategyOptions} from "../types";
 
 export class MattermostStrategy extends OAuth2Strategy {

@@ -1,11 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "strict": true,
+    "target": "es6",
+    "module": "esnext",
     "declaration": true,
-    "outDir": "./dist",
-    "strict": true
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "es2019"],
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "strictFunctionTypes": false,
+    "declarationDir": "dist/types",
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "files": ["src/index.ts"],
+  "exclude": ["node_modules", "**/dist"]
 }
